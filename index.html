@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>小竹峻治のポートフォリオ</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
+
+  <style>
+    body {
+      padding-top: 50px;
+      background-color: lightgray;
+    }
+
+    .jumbotron {
+      background-image: url("./Top.jpg");
+      background-size: cover;
+      color: white;
+    }
+
+    .jumbotron h1 {
+      padding-bottom: 400px;
+    }
+
+    .intro {
+      padding-top: 30px;
+      padding-bottom: 60px;
+    }
+
+    .work {
+      border-left: 20px solid rgb(20, 143, 192);
+    }
+
+    .studies-skill {
+      border-left: 20px solid rgb(20, 143, 192);
+    }
+
+    .point {
+      border-left: 20px solid rgb(20, 143, 192);
+    }
+
+
+    .row {
+      padding-bottom: 10px;
+    }
+
+    .space {
+      padding-top: 30px;
+    }
+
+    .pic_spase {
+      padding-top: 21px;
+    }
+
+    .titles {
+      border-left: 20px solid rgb(20, 143, 192);
+    }
+
+    .starter-template {
+      padding: 40px 80px;
+      background-color: white;
+    }
+
+    .icon-size {
+      font-size: 200%;
+    }
+
+    .color-talk {
+      color: rgb(231, 75, 75);
+    }
+
+    .color-wrench {
+      color: rgb(16, 81, 210);
+    }
+
+    .color-heart {
+      color: yellowgreen;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">小竹峻治のポートフォリオ</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Portfolio</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">ホーム</a></li>
+          <li><a href="#works">制作物</a></li>
+          <li><a href="#studies/skills">スキル</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>Portfolio </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="starter-template">
+
+
+
+      <!--  自己紹介  -->
+      <div class="intro">
+        <h2 class="titles" id="works">　自己紹介</h2>
+        <hr>
+        <p>はじめまして。小竹峻治（こたけしゅんじ）と申します。神奈川県横須賀市に住んでいます。
+          <br>
+          次々と発展する技術によって社会が変化していくことに感動し、自分でもプログラムを書くようになりました。
+          <br>
+          ポリテクセンター関東で組込みソフトウェア開発について学び、自身では競技プログラミングや簡単なゲーム・webアプリ開発に取り組んでいます。
+          <br>プログラミング以外の趣味は、楽器（ドラム）演奏、ドライブ、スポーツ全般、映画鑑賞など様々です。
+
+        </p>
+
+        <div class="space"></div>
+
+        <h2 id="works" class="point">　アピールポイント</h2>
+        <hr>
+
+        <div class="row text-center">
+          <!--<h2 id="works">アピールポイント</h2> -->
+          <div class="col-sm-4">
+            <h2 class="color-talk"><span class="glyphicon glyphicon-star-empty icon-size"></span><br>対応力</h2>
+            <p>相手の立場や状況を判断し、<br>丁寧で柔軟な対応を心がけています。<br>チームワークで強みを発揮します。</p>
+          </div>
+          <div class="col-sm-4">
+            <h2 class="color-wrench"><span class="glyphicon glyphicon-star-empty icon-size"></span><br>吸収力</h2>
+            <p>"好奇心"と"積極性"をもって、<br>楽しみながら新しい技術を<br>どんどん身に付けていきます。</p>
+          </div>
+          <div class="col-sm-4">
+            <h2 class="color-heart"><span class="glyphicon glyphicon-star-empty icon-size"></span><br>行動力</h2>
+            <p>高い目標を掲げて、<br>とことん追求していきます。<br>自分に限界を設けずに挑戦します。</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!--    Works      -->
+
+
+      <h2 id="works" class="work">　制作物</h2>
+      <hr>
+
+      <div class="space"></div>
+
+      <!--    Works 1     -->
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>1.　To Do LIST - やることリスト</h3>
+          <p>その日にやることを管理できるwebアプリです。
+            簡単な操作で、やることの一覧を表示/編集することが出来ます。
+          </p>
+          <h5>[開発詳細]</h5>
+          <p>OS：ubuntu18.04LTS
+            <br>使用技術：Node.js(express),mySQL
+            <br>使用言語:ES6(JavaScript),HTML5,css
+          </p>
+          <h5>[コメント]</h5>
+          <p>はじめて製作したwebアプリだったこともあり、開発環境の構築に手間取りました。簡単なアプリではありますが、webアプリの全体構成を理解することに役立ちました。
+          </p>
+          <h5>[今後の予定]</h5>
+          <ul>
+            <li>Raspberry Piでhttpsサーバーを立て外部に公開する。</li>
+            <li>ユーザーごとにログインして使えるようにする。</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <div class="pic_spase"></div>
+          <img src="./ToDoList.png" class="img-responsive">
+          <p>※To Do Listの一覧画面です。</p>
+        </div>
+      </div>
+
+      <!--    Works   2   -->
+
+      <div class="space"></div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>2.　Alarm Clock - 目覚まし時計アプリ</h3>
+          <p>アラーム時刻になるとミニゲームが始まり、クリアするまでアラームが止まらない作りになっています。寝起きが悪い方に役立つはずです。
+          </p>
+          <h5>[開発詳細]</h5>
+          <p>OS：raspbian,Debianのクロスコンパイル環境での開発
+            <br>外部技術詳細：RTSモジュール（時刻取得用）や入出力ボタン,タッチスクリーン,スピーカーの実装
+            <br>使用言語:C言語
+          </p>
+          <h5>[コメント]</h5>
+          <p>
+            <a href="https://www3.jeed.or.jp/kanagawa/poly/training/cource-04.html"
+              target=”_blank”>ポリテクセンター関東</a>での卒業制作として、8人のチームを組み、開発を行いました。(リンクは別タブで開きます）<br>チームリーダーとして、基本設計からテストまでの幅広い工程に関われたこと、また進捗管理等も経験することが出来たことが大変勉強になりました。メッセージや共有メモリを用いたマルチプロセス処理の実装は、Linuxの理解に役立ちました。
+          </p>
+          <h5>[今後の予定]</h5>
+          <p>コロナ禍により、突然の終了となったため、更新の予定はありません。
+            <br>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <div class="pic_spase"></div>
+          <img src="./AlarmClock.jpg" class="img-responsive">
+          <p>目覚まし時計のホーム画面です。左上の時刻をタッチすることで、アラーム設定画面に遷移します。</p>
+        </div>
+      </div>
+
+
+      <!--    Works 3   -->
+
+      <div class="space"></div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>3.　『Super Depth』風 - 潜水艦ゲーム</h3>
+          <h5>[開発詳細]</h5>
+          <p>OS：組込みLinux(Debian）をクロスコンパイル環境での開発
+            <br>ターゲットボード：Armadillo460(embedded System社)
+            <br>デバイス:LCDモニター(タッチパネル機能あり),スイッチ3ch
+            <br>使用言語:C言語
+          </p>
+          <h5>[コメント]</h5>
+          <p>
+            ターゲットボードにゲームを移植させる練習として、以前製作したコンソールゲーム（シューティング）を用いて行いました。画面のチラつきを防止することに苦戦しましたが、その後の開発に大変役立つ経験となりました。ポリテクセンターでの空き時間に少しずつ作成し、友人を驚かすことが出来たのがいい思い出です。
+
+          </p>
+          <h5>[今後の予定]</h5>
+          <ul>
+            <li>RaspberryPiに実装し直し、ゲームコントローラーから入力を受け取れるようにする。</li>
+            <li>ブラウザゲームとして遊べるように、JavaScriptで書き直す。</li>
+          </ul>
+        </div>
+        <div class="col-sm-6">
+          <div class="pic_spase"></div>
+          <img src="./SuperDepth.jpg" class="img-responsive">
+          <p>(参考画像）製作物の写真を撮っていなかったので、『Super Depth』よりお借りしました。</p>
+        </div>
+      </div>
+
+      <div class="space"></div>
+
+
+      <div class="row">
+        <div class="col-sm-12">
+
+
+          <!--  study/skills  -->
+          <h2 id="studies/skills" class="studies-skill">　スキル</h2>
+          <hr>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>組込みソフトウェア開発</h3>
+              <p><br><a href="https://www3.jeed.or.jp/kanagawa/poly/training/cource-04.html"
+                  target=”_blank”>ポリテクセンター関東</a>の組込ソフトウェア科（現IoTデバイスソフトウェア科）にて、６ヶ月間に渡り組込ソフトウェア開発を学習しました。(リンクは別タブで開きます）
+                <br>下記は主な学習内容です。
+              </p>
+              <ul>
+                <li>電子回路（アナログ・デジタル）の基礎と設計</li>
+                <li>論理回路とLSI、センサの制御</li>
+                <li>CPU・メモリの基礎とPICマイコンでの制御・開発（アセンブリ言語での開発。エディタはMATLABを使用）</li>
+                <li>RL78マイコンを用いた制御・開発（C言語での開発。）</li>
+                <li>ARMマイコンを用いたリアルタイムOS(μITRON/TOPPERS）の実装・制御・開発（C言語での開発。Eclipseを使用）</li>
+                <li>ARMマイコンを用いた組込みLinuxの実装・制御・開発（C言語での開発。Vimを使用）</li>
+                <li>Linuxを用いたアプリケーション・デバイスドライバ開発（C言語での開発。）</li>
+                <li>組込みLinuxを用いたIoTデバイス開発</li>
+              </ul>
+              <p><br>
+                コンピュータについて、電子回路から学習することが出来たことは、大変貴重な経験となりました。
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <div class="pic_spase"></div>
+              <img src="./board.jpg" class="img-responsive">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space"></div>
+
+
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>競技プログラミング</h3>
+          <p><br><a href="https://atcoder.jp/" target=”_blank”>atcoder社</a>の開催するプログラミングコンテストへ参加しています。<br>(リンクは別タブで開きます）
+            <br>競技プログラミングへ参加している理由は以下の３点です。</p>
+          <p>
+          <ul>
+            <li>素早く正確にコーディングする力を養うため</li>
+            <li>アルゴリズムとデータ構造の理解を深めるため</li>
+            <li>自分の実力を客観的に把握するため</li>
+          </ul>
+          2020年1月から参加し始め,現在までに約５００問ほど解いてきました。
+          <br>計算量を意識してコードを書くようになったり、プログラミング自体に慣れるなど、
+          <br>自分にとって大変有益な趣味となっています。
+          <br>言語はC++を、エディタはVisualStudioCodeを中心に使っています。
+          <br>
+          競技プログラミングの問題例です。(リンクは別タブで開きます）
+          <br>A,B,C...と、昇順に問題の難易度が上がります。
+          <ul>
+            <li><a href="https://atcoder.jp/contests/abc166/tasks/abc166_b" target=”_blank”>AtCoder Beginner Contest 166
+                B - Trick or Treat</a></li>
+            <li><a href="https://atcoder.jp/contests/abc166/tasks/abc166_c" target=”_blank”>AtCoder Beginner Contest 166
+                C - Peaks</a></li>
+            <li><a href="https://atcoder.jp/contests/abc166/tasks/abc166_d" target=”_blank”>AtCoder Beginner Contest 166
+                D - I hate Factorization</a></li>
+          </ul>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <div class="pic_spase"></div>
+          <img src="./atcoder_score.png" class="img-responsive">
+          <p>※上記は私の成績です。RedLobsterのアカウント名で登録しております。
+            <br>今後も参加予定です。
+          </p>
+        </div>
+      </div>
+
+      <div class="space"></div>
+
+      <h3>OS</h3>
+      <ul>
+        <li>Linux（ubuntu)</li>
+        <li>windows10</li>
+      </ul>
+
+      <h3>言語</h3>
+      <p>C/C++を中心に使用しています。
+        <br>bashも日常的に使用しています。
+        <br>
+        web開発に挑戦するために、JavaScriptを学び始めました。
+      </p>
+      <ul>
+        <li>Assembly</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>bash</li>
+        <li>JavaScript</li>
+        <li>HTML5</li>
+        <li>CSS</li>
+      </ul>
+      <h3>データベース</h3>
+      <ul>
+        <li>mySQL</li>
+      </ul>
+
+      <h3>フレームワーク</h3>
+      <ul>
+        <li>NODE.js</li>
+        <li>Bootstrap</li>
+      </ul>
+
+      <h3>IDE/エディタ</h3>
+      <ul>
+        <li>VisualStudio</li>
+        <li>VisualStudioCode</li>
+        <li>Vim</li>
+        <li>Eclipse</li>
+      </ul>
+
+      <h3>資格</h3>
+      <ul>
+        <li>基本情報技術者試験 合格</li>
+        <li>TOEIC Listening & Reading TEST score:695</li>
+      </ul>
+
+      <h3>その他</h3>
+      <p>GitHubを始めたので、ソースコードを見ていただけますと幸いです。(リンクは別タブで開きます）
+      </p>
+      <ul>
+        <li><a href="https://github.com/RedLobster9119" target=”_blank>小竹峻治のGitHubアカウント</a></li>
+      </ul>
+
+
+    </div>
+  </div>
+  <a class="btn btn-primary pull-right" href="#">Topに戻る</a>
+  <p></p>
+  </div>
+  </div>
+  <!-- /.container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
